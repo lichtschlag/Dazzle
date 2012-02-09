@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+// ===============================================================================================================
 @interface DazAppDelegate : UIResponder <UIApplicationDelegate>
+// ===============================================================================================================
 
 @property (strong, nonatomic) UIWindow *window;
 
+
 @end
+

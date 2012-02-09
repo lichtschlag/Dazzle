@@ -62,8 +62,7 @@
 
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Accept all oriantations defined in the Info.plist
-	return YES;
+	return (interfaceOrientation == UIDeviceOrientationPortrait);
 }
 
 

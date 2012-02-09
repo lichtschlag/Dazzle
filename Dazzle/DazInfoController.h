@@ -1,13 +1,16 @@
 //
-//  DazSecondViewController.h
+//  DazInfoController.h
 //  Dazzle
 //
 //  Created by Leonhard Lichtschlag on 9/Feb/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Leonhard Lichtschlag. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface DazSecondViewController : UIViewController
+// ===============================================================================================================
+@interface DazInfoController : UIViewController
+// ===============================================================================================================
+
 
 @end

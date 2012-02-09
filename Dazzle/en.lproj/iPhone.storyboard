@@ -49,7 +49,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fire" image="first" id="UIo-aQ-YkY"/>
+                    <tabBarItem key="tabBarItem" title="Fire" image="DazFlameIcon" id="UIo-aQ-YkY"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1006" y="430"/>
@@ -94,7 +94,7 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Info" image="second" id="6"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="DazFlakeIcon" id="6"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="644" y="-149"/>
@@ -103,7 +103,7 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
                 <tabBarController id="4" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="5">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -120,9 +120,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="DazFlakeIcon" width="16" height="16"/>
+        <image name="DazFlameIcon" width="16" height="16"/>
         <image name="DazHeartIcon" width="16" height="16"/>
-        <image name="first" width="16" height="16"/>
-        <image name="second" width="16" height="16"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

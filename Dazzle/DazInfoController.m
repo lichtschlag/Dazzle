@@ -7,6 +7,7 @@
 //
 
 #import "DazInfoController.h"
+#import <QuartzCore/CoreAnimation.h>
 
 // ===============================================================================================================
 @implementation DazInfoController
@@ -21,40 +22,40 @@
 - (void) viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
+	
+	// Configure the particle emitter to the top edge of the screen
+	CAEmitterLayer *snowEmitter = [CAEmitterLayer layer];
+	snowEmitter.emitterPosition = CGPointMake(self.view.bounds.size.width / 2.0, -30);
+	snowEmitter.emitterSize		= CGSizeMake(self.view.bounds.size.width * 2.0, 0.0);;
+	
+	// Spawn points for the hearts are within the volume defined by the button frame
+	snowEmitter.emitterMode		= kCAEmitterLayerOutline;
+	snowEmitter.emitterShape	= kCAEmitterLayerLine;
+	
+	// Configure the emitter cell
+	CAEmitterCell *snowflake = [CAEmitterCell emitterCell];
+	
+	snowflake.birthRate		= 1.0;
+	snowflake.lifetime		= 120.0;
+	
+	snowflake.velocity		= -10;				// falling down slowly
+	snowflake.velocityRange = 10;
+	snowflake.yAcceleration = 2;
+	snowflake.emissionRange = 0.5 * M_PI;		// some variation in angle
+	snowflake.spinRange		= 0.25 * M_PI;		// slow spin
+	
+	snowflake.contents		= (id) [[UIImage imageNamed:@"DazFlake"] CGImage];
+	snowflake.color			= [[UIColor colorWithRed:0.600 green:0.658 blue:0.743 alpha:1.000] CGColor];
 
-
-- (void) viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-
-- (void) viewWillAppear:(BOOL)animated
-{
-	[super viewWillAppear:animated];
-	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
-}
-
-
-- (void) viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-
-- (void) viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-
-- (void) viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
+	// make the flakes seem inset in the background
+	snowEmitter.shadowOpacity = 1.0;
+	snowEmitter.shadowRadius  = 0.0;
+	snowEmitter.shadowOffset  = CGSizeMake(0.0, 1.0);
+	snowEmitter.shadowColor   = [[UIColor whiteColor] CGColor];
+	
+	// Add everything to our backing layer
+	snowEmitter.emitterCells = [NSArray arrayWithObject:snowflake];
+	[self.view.layer insertSublayer:snowEmitter atIndex:0];
 }
 
 

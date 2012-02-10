@@ -68,6 +68,7 @@
 
 - (void) viewWillUnload
 {
+	[super viewWillUnload];
 	[self.heartsEmitter removeFromSuperlayer];
 	self.heartsEmitter = nil;
 }

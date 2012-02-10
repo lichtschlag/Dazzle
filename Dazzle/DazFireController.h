@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@class CAEmitterLayer;
+
 // ===============================================================================================================
 @interface DazFireController : UIViewController
 // ===============================================================================================================
+
+@property (strong) CAEmitterLayer *fireEmitter;
+@property (strong) CAEmitterLayer *smokeEmitter;
+
+- (IBAction) controlFireHeight:(id)sender;
+- (void) setFireAmount:(float)zeroToOne;
 
 
 @end

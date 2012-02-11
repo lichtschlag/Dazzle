@@ -33,6 +33,7 @@
                         <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Hearts" image="DazHeartIcon" id="7"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <connections>
                         <outlet property="likeButton" destination="tBm-RZ-8FS" id="cIZ-69-InB"/>
                     </connections>
@@ -62,6 +63,7 @@
                         <gestureRecognizers/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Fire" image="DazFlameIcon" id="UIo-aQ-YkY"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1006" y="430"/>
@@ -107,6 +109,8 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="DazFlakeIcon" id="6"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="644" y="-149"/>
@@ -121,6 +125,7 @@
                         <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Touch" image="first" id="baS-VP-5MK"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1006" y="-149"/>

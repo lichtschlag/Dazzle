@@ -27,13 +27,7 @@
     [super viewDidLoad];
 	
 	CGRect viewBounds = self.view.layer.bounds;
-	
-	CALayer *testBox = [CALayer layer];
-	testBox.position = CGPointMake(viewBounds.size.width/2.0, viewBounds.size.height - 35);
-	testBox.bounds = CGRectMake(0, 0, viewBounds.size.width/2.0, 50.0);
-	testBox.backgroundColor = [[UIColor colorWithRed:1.0 green:0.8 blue:0.4 alpha:1.0] CGColor];
-	[self.view.layer addSublayer:testBox];
-	
+		
 	// Create the emitter layers
 	self.fireEmitter = [CAEmitterLayer layer];
 	self.smokeEmitter = [CAEmitterLayer layer];
@@ -116,16 +110,33 @@
 #pragma mark Interaction
 // ---------------------------------------------------------------------------------------------------------------
 
-- (IBAction) controlFireHeight:(id)sender 
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	NSLog(@"%s %@", __PRETTY_FUNCTION__, sender);
-	
+	[self controlFireHeight:event];
 }
+
+
+- (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	[self controlFireHeight:event];
+}
+
+
+- (void) controlFireHeight:(UIEvent *)event
+{
+	UITouch *touch = [[event allTouches] anyObject];
+	CGPoint touchPoint = [touch locationInView:self.view];
+	float distanceToBottom	= self.view.bounds.size.height - touchPoint.y;
+	float percentage		= distanceToBottom / self.view.bounds.size.height;
+	percentage				= MAX(MIN(percentage, 1.0), 0.1);
+	[self setFireAmount:2 *percentage];
+}
+
 
 - (void) setFireAmount:(float)zeroToOne
 {
 	//Update the fire properties
-	[self.fireEmitter setValue:[NSNumber numberWithInt:(zeroToOne * 1000)]
+	[self.fireEmitter setValue:[NSNumber numberWithInt:(zeroToOne * 500)]
 					forKeyPath:@"emitterCells.fire.birthRate"];
 	[self.fireEmitter setValue:[NSNumber numberWithFloat:zeroToOne]
 					forKeyPath:@"emitterCells.fire.lifetime"];

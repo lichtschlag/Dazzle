@@ -17,7 +17,7 @@
 @property (strong) CAEmitterLayer *fireEmitter;
 @property (strong) CAEmitterLayer *smokeEmitter;
 
-- (IBAction) controlFireHeight:(id)sender;
+- (void) controlFireHeight:(id)sender;
 - (void) setFireAmount:(float)zeroToOne;
 
 

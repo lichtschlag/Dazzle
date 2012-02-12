@@ -145,6 +145,7 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
                 <tabBarController id="4" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="5">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
@@ -159,7 +160,7 @@
                     </connections>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="132" y="180"/>
+            <point key="canvasLocation" x="116" y="132"/>
         </scene>
     </scenes>
     <resources>
@@ -168,24 +169,6 @@
         <image name="DazHeartIcon" width="16" height="16"/>
         <image name="first" width="16" height="16"/>
     </resources>
-    <classes>
-        <class className="DazFireController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DazFireController.h"/>
-        </class>
-        <class className="DazInfoController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DazInfoController.h"/>
-        </class>
-        <class className="DazTouchController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DazTouchController.h"/>
-        </class>
-        <class className="DazViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DazViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="likeButtonPressed:"/>
-                <relationship kind="outlet" name="likeButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

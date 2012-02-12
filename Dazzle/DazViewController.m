@@ -32,7 +32,7 @@
 													 likeButton.frame.origin.y + likeButton.frame.size.height/2.0);
 	self.heartsEmitter.emitterSize = likeButton.bounds.size;
 	
-	// Spawn points for the hearts are within the volume defined by the button frame
+	// Spawn points for the hearts are within the area defined by the button frame
 	self.heartsEmitter.emitterMode = kCAEmitterLayerVolume;
 	self.heartsEmitter.emitterShape = kCAEmitterLayerRectangle;
 	self.heartsEmitter.renderMode = kCAEmitterLayerAdditive;

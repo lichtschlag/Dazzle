@@ -14,7 +14,6 @@
 // ===============================================================================================================
 
 @synthesize ringEmitter;
-@synthesize testBox;
 
 
 // ---------------------------------------------------------------------------------------------------------------
@@ -28,17 +27,10 @@
 	
 	CGRect viewBounds = self.view.layer.bounds;
 	
-	self.testBox		= [CALayer layer];
-	self.testBox.position		= CGPointMake(viewBounds.size.width/2.0, viewBounds.size.height/2.0);
-	self.testBox.bounds			= CGRectMake(0.0, 0.0, 50.0, 50.0);
-	self.testBox.cornerRadius	= 25.0;
-	self.testBox.backgroundColor = [[UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.1] CGColor];
-	[self.view.layer addSublayer:testBox];
-	
-	// Create the emitter layers
+	// Create the emitter layer
 	self.ringEmitter = [CAEmitterLayer layer];
 	
-	// Place layers just above the tab bar
+	// Cells spawn in a 50pt circle around the position
 	self.ringEmitter.emitterPosition = CGPointMake(viewBounds.size.width/2.0, viewBounds.size.height/2.0);
 	self.ringEmitter.emitterSize	= CGSizeMake(50, 0);
 	self.ringEmitter.emitterMode	= kCAEmitterLayerOutline;
@@ -53,7 +45,7 @@
 	ring.velocity			= 250;
 	ring.scale				= 0.5;
 	ring.scaleSpeed			=-0.2;
-	ring.greenSpeed			=-0.2;
+	ring.greenSpeed			=-0.2;	// shifting to green
 	ring.redSpeed			=-0.5;
 	ring.blueSpeed			=-0.5;
 	ring.lifetime			= 2;
@@ -65,14 +57,14 @@
 	CAEmitterCell* circle = [CAEmitterCell emitterCell];
 	[circle setName:@"circle"];
 	
-	circle.birthRate		= 10;
-	circle.emissionLongitude = M_PI * 0.5;
+	circle.birthRate		= 10;			// every triangle creates 20
+	circle.emissionLongitude = M_PI * 0.5;	// sideways to triangle vector
 	circle.velocity			= 50;
 	circle.scale			= 0.5;
 	circle.scaleSpeed		=-0.2;
-	circle.greenSpeed		=-0.1;
+	circle.greenSpeed		=-0.1;	// shifting to blue
 	circle.redSpeed			=-0.2;
-	circle.blueSpeed		= 0.1;
+	circle.blueSpeed		= 0.1;	
 	circle.alphaSpeed		=-0.2;
 	circle.lifetime			= 4;
 	
@@ -83,14 +75,14 @@
 	CAEmitterCell* star = [CAEmitterCell emitterCell];
 	[star setName:@"star"];
 	
-	star.birthRate		= 10;
+	star.birthRate		= 10;	// every triangle creates 20
 	star.velocity		= 100;
 	star.zAcceleration  = -1;
-	star.emissionLongitude = -M_PI;
+	star.emissionLongitude = -M_PI;	// back from triangle vector
 	star.scale			= 0.5;
 	star.scaleSpeed		=-0.2;
 	star.greenSpeed		=-0.1;
-	star.redSpeed		= 0.4;
+	star.redSpeed		= 0.4;	// shifting to red
 	star.blueSpeed		=-0.1;
 	star.alphaSpeed		=-0.2;
 	star.lifetime		= 2;
@@ -98,10 +90,10 @@
 	star.color = [[UIColor whiteColor] CGColor];
 	star.contents = (id) [[UIImage imageNamed:@"DazStarOutline"] CGImage];
 	
-	// Putting things together
+	// First traigles are emitted, which then spawn circles and star along their path
 	self.ringEmitter.emitterCells = [NSArray arrayWithObject:ring];
 	ring.emitterCells = [NSArray arrayWithObjects:circle, star, nil];
-	//	circle.emitterCells = [NSArray arrayWithObject:star];
+	//	circle.emitterCells = [NSArray arrayWithObject:star];	// this is SLOW!
 	[self.view.layer addSublayer:self.ringEmitter];
 }
 
@@ -145,8 +137,8 @@
 {
 	// Bling bling..
 	CABasicAnimation *burst = [CABasicAnimation animationWithKeyPath:@"emitterCells.ring.birthRate"];
-	burst.fromValue			= [NSNumber numberWithFloat: 125.0];
-	burst.toValue			= [NSNumber numberWithFloat: 0.0];
+	burst.fromValue			= [NSNumber numberWithFloat: 125.0];	// short but intense burst
+	burst.toValue			= [NSNumber numberWithFloat: 0.0];		// each birth creates 20 aditional cells!
 	burst.duration			= 0.5;
 	burst.timingFunction	= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
 	
@@ -156,7 +148,6 @@
 	[CATransaction begin];
 	[CATransaction setDisableActions: YES];
 	self.ringEmitter.emitterPosition	= position;
-	self.testBox.position				= position;
 	[CATransaction commit];
 }
 

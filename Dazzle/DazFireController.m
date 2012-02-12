@@ -27,7 +27,7 @@
     [super viewDidLoad];
 	
 	CGRect viewBounds = self.view.layer.bounds;
-		
+	
 	// Create the emitter layers
 	self.fireEmitter	= [CAEmitterLayer layer];
 	self.smokeEmitter	= [CAEmitterLayer layer];
@@ -37,6 +37,7 @@
 	self.fireEmitter.emitterSize	= CGSizeMake(viewBounds.size.width/2.0, 0);
 	self.fireEmitter.emitterMode	= kCAEmitterLayerOutline;
 	self.fireEmitter.emitterShape	= kCAEmitterLayerLine;
+	// with additive rendering the dense cell distribution will create "hot" areas
 	self.fireEmitter.renderMode		= kCAEmitterLayerAdditive;
 	
 	self.smokeEmitter.emitterPosition = CGPointMake(viewBounds.size.width/2.0, viewBounds.size.height - 60);

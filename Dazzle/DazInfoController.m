@@ -28,11 +28,11 @@
 	snowEmitter.emitterPosition = CGPointMake(self.view.bounds.size.width / 2.0, -30);
 	snowEmitter.emitterSize		= CGSizeMake(self.view.bounds.size.width * 2.0, 0.0);;
 	
-	// Spawn points for the hearts are within the volume defined by the button frame
+	// Spawn points for the flakes are within on the outline of the line
 	snowEmitter.emitterMode		= kCAEmitterLayerOutline;
 	snowEmitter.emitterShape	= kCAEmitterLayerLine;
 	
-	// Configure the emitter cell
+	// Configure the snowflake emitter cell
 	CAEmitterCell *snowflake = [CAEmitterCell emitterCell];
 	
 	snowflake.birthRate		= 1.0;
@@ -47,13 +47,13 @@
 	snowflake.contents		= (id) [[UIImage imageNamed:@"DazFlake"] CGImage];
 	snowflake.color			= [[UIColor colorWithRed:0.600 green:0.658 blue:0.743 alpha:1.000] CGColor];
 
-	// make the flakes seem inset in the background
+	// Make the flakes seem inset in the background
 	snowEmitter.shadowOpacity = 1.0;
 	snowEmitter.shadowRadius  = 0.0;
 	snowEmitter.shadowOffset  = CGSizeMake(0.0, 1.0);
 	snowEmitter.shadowColor   = [[UIColor whiteColor] CGColor];
 	
-	// Add everything to our backing layer
+	// Add everything to our backing layer below the UIContol defined in the storyboard
 	snowEmitter.emitterCells = [NSArray arrayWithObject:snowflake];
 	[self.view.layer insertSublayer:snowEmitter atIndex:0];
 }

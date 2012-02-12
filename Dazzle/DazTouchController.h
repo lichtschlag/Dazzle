@@ -15,7 +15,6 @@
 // ===============================================================================================================
 
 @property (strong) CAEmitterLayer *ringEmitter;
-@property (strong) CALayer *testBox;
 
 - (void) touchAtPosition:(CGPoint)position;
 

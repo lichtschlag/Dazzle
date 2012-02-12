@@ -14,6 +14,7 @@
 // ===============================================================================================================
 
 @synthesize ringEmitter;
+@synthesize testBox;
 
 
 // ---------------------------------------------------------------------------------------------------------------
@@ -27,42 +28,43 @@
 	
 	CGRect viewBounds = self.view.layer.bounds;
 	
-	CALayer *testBox = [CALayer layer];
-	testBox.position = CGPointMake(viewBounds.size.width/2.0, viewBounds.size.height - 35);
-	testBox.bounds = CGRectMake(0, 0, viewBounds.size.width/2.0, 50.0);
-	testBox.backgroundColor = [[UIColor colorWithRed:1.0 green:0.8 blue:0.4 alpha:1.0] CGColor];
+	self.testBox		= [CALayer layer];
+	self.testBox.position		= CGPointMake(viewBounds.size.width/2.0, viewBounds.size.height/2.0);
+	self.testBox.bounds			= CGRectMake(0.0, 0.0, 50.0, 50.0);
+	self.testBox.cornerRadius	= 25.0;
+	self.testBox.backgroundColor = [[UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.1] CGColor];
 	[self.view.layer addSublayer:testBox];
 	
 	// Create the emitter layers
 	self.ringEmitter = [CAEmitterLayer layer];
 	
 	// Place layers just above the tab bar
-	self.ringEmitter.emitterPosition = CGPointMake(viewBounds.size.width/2.0, viewBounds.size.height - 60);
-	self.ringEmitter.emitterSize		= CGSizeMake(viewBounds.size.width/2.0, 0);
-	self.ringEmitter.emitterMode		= kCAEmitterLayerOutline;
-	self.ringEmitter.emitterShape	= kCAEmitterLayerLine;
+	self.ringEmitter.emitterPosition = CGPointMake(viewBounds.size.width/2.0, viewBounds.size.height/2.0);
+	self.ringEmitter.emitterSize	= CGSizeMake(50, 0);
+	self.ringEmitter.emitterMode	= kCAEmitterLayerOutline;
+	self.ringEmitter.emitterShape	= kCAEmitterLayerCircle;
 	self.ringEmitter.renderMode		= kCAEmitterLayerAdditive;
 		
 	// Create the fire emitter cell
-	CAEmitterCell* fire = [CAEmitterCell emitterCell];
-	[fire setName:@"fire"];
+	CAEmitterCell* ring = [CAEmitterCell emitterCell];
+	[ring setName:@"ring"];
 	
-	fire.birthRate			= 0;
-	fire.emissionLongitude  = M_PI;
-	fire.velocity			= -80;
-	fire.velocityRange		= 30;
-	fire.emissionRange		= 1.1;
-	fire.yAcceleration		= -200;
-	fire.scaleSpeed			= 0.3;
-	fire.lifetime			= 50;
-	fire.lifetimeRange		= (50.0 * 0.35);
+	ring.birthRate			= 0;
+	//	ring.emissionLongitude  = M_PI;
+	ring.velocity			= 250;
+	//	ring.velocityRange		= 0;
+	//	ring.emissionRange		= M_PI;
+	//	ring.yAcceleration		= -200;
+	ring.scale				= 0.3;
+	ring.scaleSpeed			= 0.3;
+	ring.lifetime			= 2;
+	//	ring.lifetimeRange		= 0;
 	
-	fire.color = [[UIColor colorWithRed:0.8 green:0.4 blue:0.2 alpha:0.1] CGColor];
-	fire.contents = (id) [[UIImage imageNamed:@"DazFire"] CGImage];
-	
-	
-	// Add the smoke emitter cell to the smoke emitter layer
-	self.ringEmitter.emitterCells	= [NSArray arrayWithObject:fire];
+	ring.color = [[UIColor whiteColor] CGColor];
+	ring.contents = (id) [[UIImage imageNamed:@"DazStarOutline"] CGImage];
+		
+	// Putting things together
+	self.ringEmitter.emitterCells = [NSArray arrayWithObject:ring];
 	[self.view.layer addSublayer:self.ringEmitter];
 }
 
@@ -75,7 +77,7 @@
 }
 
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
@@ -104,14 +106,21 @@
 
 - (void) touchAtPosition:(CGPoint)position
 {
-	float zeroToOne;
-	//Update the fire properties
-	[self.ringEmitter setValue:[NSNumber numberWithInt:(zeroToOne * 500)]
-					forKeyPath:@"emitterCells.fire.birthRate"];
-	[self.ringEmitter setValue:[NSNumber numberWithFloat:zeroToOne]
-					forKeyPath:@"emitterCells.fire.lifetime"];
-	[self.ringEmitter setValue:[NSNumber numberWithFloat:(zeroToOne * 0.35)]
-					forKeyPath:@"emitterCells.fire.lifetimeRange"];
+	// Bling bling..
+	CABasicAnimation *burst = [CABasicAnimation animationWithKeyPath:@"emitterCells.ring.birthRate"];
+	burst.fromValue			= [NSNumber numberWithFloat: 25.0];
+	burst.toValue			= [NSNumber numberWithFloat: 0.0];
+	burst.duration			= 0.5;
+	burst.timingFunction	= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+	
+	[self.ringEmitter addAnimation:burst forKey:@"burst"]; 
+
+	// Move to touch point
+	[CATransaction begin];
+	[CATransaction setDisableActions: YES];
+	self.ringEmitter.emitterPosition	= position;
+	self.testBox.position				= position;
+	[CATransaction commit];
 }
 
 

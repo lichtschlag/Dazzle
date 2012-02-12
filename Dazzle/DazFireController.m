@@ -29,13 +29,13 @@
 	CGRect viewBounds = self.view.layer.bounds;
 		
 	// Create the emitter layers
-	self.fireEmitter = [CAEmitterLayer layer];
-	self.smokeEmitter = [CAEmitterLayer layer];
+	self.fireEmitter	= [CAEmitterLayer layer];
+	self.smokeEmitter	= [CAEmitterLayer layer];
 	
 	// Place layers just above the tab bar
 	self.fireEmitter.emitterPosition = CGPointMake(viewBounds.size.width/2.0, viewBounds.size.height - 60);
-	self.fireEmitter.emitterSize		= CGSizeMake(viewBounds.size.width/2.0, 0);
-	self.fireEmitter.emitterMode		= kCAEmitterLayerOutline;
+	self.fireEmitter.emitterSize	= CGSizeMake(viewBounds.size.width/2.0, 0);
+	self.fireEmitter.emitterMode	= kCAEmitterLayerOutline;
 	self.fireEmitter.emitterShape	= kCAEmitterLayerLine;
 	self.fireEmitter.renderMode		= kCAEmitterLayerAdditive;
 	
@@ -64,19 +64,19 @@
 	CAEmitterCell* smoke = [CAEmitterCell emitterCell];
 	[smoke setName:@"smoke"];
 
-	smoke.birthRate = 11;
+	smoke.birthRate			= 11;
 	smoke.emissionLongitude = -M_PI / 2;
-	smoke.lifetime = 200;
-	smoke.velocity = -40;
-	smoke.velocityRange = 20;
-	smoke.emissionRange = M_PI / 4;
-	smoke.spin = 1;
-	smoke.spinRange = 6;
-	smoke.yAcceleration = -160;
-	smoke.contents = (id) [[UIImage imageNamed:@"DazSmoke"] CGImage];
-	smoke.scale = 0.1;
-	smoke.alphaSpeed = -0.12;
-	smoke.scaleSpeed = 0.7;
+	smoke.lifetime			= 10;
+	smoke.velocity			= -40;
+	smoke.velocityRange		= 20;
+	smoke.emissionRange		= M_PI / 4;
+	smoke.spin				= 1;
+	smoke.spinRange			= 6;
+	smoke.yAcceleration		= -160;
+	smoke.contents			= (id) [[UIImage imageNamed:@"DazSmoke"] CGImage];
+	smoke.scale				= 0.1;
+	smoke.alphaSpeed		= -0.12;
+	smoke.scaleSpeed		= 0.7;
 	
 	
 	// Add the smoke emitter cell to the smoke emitter layer
@@ -124,8 +124,8 @@
 
 - (void) controlFireHeight:(UIEvent *)event
 {
-	UITouch *touch = [[event allTouches] anyObject];
-	CGPoint touchPoint = [touch locationInView:self.view];
+	UITouch *touch			= [[event allTouches] anyObject];
+	CGPoint touchPoint		= [touch locationInView:self.view];
 	float distanceToBottom	= self.view.bounds.size.height - touchPoint.y;
 	float percentage		= distanceToBottom / self.view.bounds.size.height;
 	percentage				= MAX(MIN(percentage, 1.0), 0.1);
@@ -135,7 +135,7 @@
 
 - (void) setFireAmount:(float)zeroToOne
 {
-	//Update the fire properties
+	// Update the fire properties
 	[self.fireEmitter setValue:[NSNumber numberWithInt:(zeroToOne * 500)]
 					forKeyPath:@"emitterCells.fire.birthRate"];
 	[self.fireEmitter setValue:[NSNumber numberWithFloat:zeroToOne]
@@ -152,3 +152,5 @@
 
 
 @end
+
+

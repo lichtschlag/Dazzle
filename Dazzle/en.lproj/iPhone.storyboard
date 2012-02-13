@@ -96,11 +96,11 @@
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="13" minimumFontSize="10" id="IUK-62-anR">
-                                <rect key="frame" x="20" y="228" width="280" height="163"/>
+                                <rect key="frame" x="20" y="215" width="280" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">In iOS 5, CoreAnimation added support for particle effects through the CAEmitterLayer and CAEmitterCell classes. These four tabs show some tricks with them.
 
-Code  for the fire tab adapted from the  example for Mac OS provided by Apple.</string>
+I adapted the fire source code from the corresponding example for Mac OS provided by Apple.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.23883308470249176" green="0.30038738250732422" blue="0.49090388417243958" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -171,6 +171,24 @@ Code  for the fire tab adapted from the  example for Mac OS provided by Apple.</
         <image name="DazHeartIcon" width="16" height="16"/>
         <image name="first" width="16" height="16"/>
     </resources>
+    <classes>
+        <class className="DazFireController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DazFireController.h"/>
+        </class>
+        <class className="DazInfoController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DazInfoController.h"/>
+        </class>
+        <class className="DazTouchController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DazTouchController.h"/>
+        </class>
+        <class className="DazViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DazViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="likeButtonPressed:"/>
+                <relationship kind="outlet" name="likeButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

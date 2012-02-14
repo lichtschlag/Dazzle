@@ -59,13 +59,6 @@
 }
 
 
-- (void) viewWillAppear:(BOOL)animated
-{
-	[super viewWillAppear:animated];
-	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
-}
-
-
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
 	return (interfaceOrientation == UIDeviceOrientationPortrait);

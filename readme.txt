@@ -15,10 +15,14 @@ with the CAEmitterCell and CAEmitterLayer classes:
 *	In the "fire" tab, additive overlaying of cell creates a somehwat realistic 
 	impression of fire. The source code here has been adapted from the 
 	corresponding Apple sample code for Mac.
-*	In the last tab, I show how emitted cells can in turn again emitt cells:
+*	In the fourth tab, I show how emitted cells can in turn again emitt cells:
 	the triangles sent away from the touch send two kinds of cells sindways 
 	and back to the touch location. The emitted cells start with their 
 	visual values set to those of their parents.
+*	Emitters can also be invisible, but there seems to be a bug in 
+	CAEmitterLayer: setting the birthrate lower than 1.0 creates huge spawn rates
+	even though it should be less. To still create the fireworks with it, the 
+	explosion can therefore only happen at most 1 sec after the rocket launches. 
 
 Performancewise, setting the flame height to maximum will really stress the 
 iPhone4's graphics to its max, resulting at about ~30 fps. Likewise a constant 

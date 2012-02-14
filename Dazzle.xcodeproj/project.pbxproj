@@ -42,6 +42,9 @@
 		3F687BC914E478EE007F7BBF /* DazFlake.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F687BC614E478EE007F7BBF /* DazFlake.png */; };
 		3F687BCA14E478EE007F7BBF /* DazFlakeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F687BC714E478EE007F7BBF /* DazFlakeIcon.png */; };
 		3F687BCB14E478EE007F7BBF /* DazFlakeIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F687BC814E478EE007F7BBF /* DazFlakeIcon@2x.png */; };
+		3FBCC57614EAC1ED007A5BFF /* DazFireworksController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC57514EAC1ED007A5BFF /* DazFireworksController.m */; };
+		3FBCC57A14EAF3E8007A5BFF /* DazStarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCC57814EAF3E8007A5BFF /* DazStarIcon@2x.png */; };
+		3FBCC57B14EAF3E8007A5BFF /* DazStarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCC57914EAF3E8007A5BFF /* DazStarIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +91,10 @@
 		3F687BC614E478EE007F7BBF /* DazFlake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazFlake.png; sourceTree = "<group>"; };
 		3F687BC714E478EE007F7BBF /* DazFlakeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazFlakeIcon.png; sourceTree = "<group>"; };
 		3F687BC814E478EE007F7BBF /* DazFlakeIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DazFlakeIcon@2x.png"; sourceTree = "<group>"; };
+		3FBCC57414EAC1ED007A5BFF /* DazFireworksController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DazFireworksController.h; sourceTree = "<group>"; };
+		3FBCC57514EAC1ED007A5BFF /* DazFireworksController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DazFireworksController.m; sourceTree = "<group>"; };
+		3FBCC57814EAF3E8007A5BFF /* DazStarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DazStarIcon@2x.png"; sourceTree = "<group>"; };
+		3FBCC57914EAF3E8007A5BFF /* DazStarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazStarIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +153,8 @@
 				3F0FBB1214E43DBF005ECFA1 /* DazFireController.m */,
 				3F4AC04F14E7259400A91334 /* DazTouchController.h */,
 				3F4AC05014E7259400A91334 /* DazTouchController.m */,
+				3FBCC57414EAC1ED007A5BFF /* DazFireworksController.h */,
+				3FBCC57514EAC1ED007A5BFF /* DazFireworksController.m */,
 				3F0FBAFD14E41C98005ECFA1 /* Ressources */,
 				3F0FBAD814E41839005ECFA1 /* Supporting Files */,
 			);
@@ -206,6 +215,8 @@
 				3F687BC214E47426007F7BBF /* DazFlameIcon@2x.png */,
 				3F687BC714E478EE007F7BBF /* DazFlakeIcon.png */,
 				3F687BC814E478EE007F7BBF /* DazFlakeIcon@2x.png */,
+				3FBCC57914EAF3E8007A5BFF /* DazStarIcon.png */,
+				3FBCC57814EAF3E8007A5BFF /* DazStarIcon@2x.png */,
 				3F0FBAEC14E41839005ECFA1 /* first.png */,
 				3F0FBAEE14E41839005ECFA1 /* first@2x.png */,
 			);
@@ -253,6 +264,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Leonhard Lichtschlag";
 			};
 			buildConfigurationList = 3F0FBAC714E41839005ECFA1 /* Build configuration list for PBXProject "Dazzle" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -301,6 +313,8 @@
 				3F4AC04D14E70C7200A91334 /* readme.txt in Resources */,
 				3F4AC05414E7374200A91334 /* DazTriangle.png in Resources */,
 				3F4AC05514E7374200A91334 /* DazRing.png in Resources */,
+				3FBCC57A14EAF3E8007A5BFF /* DazStarIcon@2x.png in Resources */,
+				3FBCC57B14EAF3E8007A5BFF /* DazStarIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +331,7 @@
 				3F0FBAF214E41839005ECFA1 /* DazInfoController.m in Sources */,
 				3F0FBB1314E43DBF005ECFA1 /* DazFireController.m in Sources */,
 				3F4AC05114E7259500A91334 /* DazTouchController.m in Sources */,
+				3FBCC57614EAC1ED007A5BFF /* DazFireworksController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

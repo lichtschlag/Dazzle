@@ -98,7 +98,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="13" minimumFontSize="10" id="IUK-62-anR">
                                 <rect key="frame" x="20" y="215" width="280" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">In iOS 5, CoreAnimation added support for particle effects through the CAEmitterLayer and CAEmitterCell classes. These four tabs show some tricks with them.
+                                <string key="text">In iOS 5, CoreAnimation added support for particle effects through the CAEmitterLayer and CAEmitterCell classes. These tabs show some tricks with them.
 
 I adapted the fire source code from the corresponding example for Mac OS provided by Apple.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>

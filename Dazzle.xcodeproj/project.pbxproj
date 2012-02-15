@@ -33,7 +33,6 @@
 		3F4AC04114E7082F00A91334 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F4AC03A14E7082F00A91334 /* Icon.png */; };
 		3F4AC04214E7082F00A91334 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F4AC03B14E7082F00A91334 /* Icon@2x.png */; };
 		3F4AC04314E7082F00A91334 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F4AC03C14E7082F00A91334 /* iTunesArtwork.png */; };
-		3F4AC04D14E70C7200A91334 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3F4AC04C14E70C7200A91334 /* readme.txt */; };
 		3F4AC05114E7259500A91334 /* DazTouchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AC05014E7259400A91334 /* DazTouchController.m */; };
 		3F4AC05414E7374200A91334 /* DazTriangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F4AC05214E7374200A91334 /* DazTriangle.png */; };
 		3F4AC05514E7374200A91334 /* DazRing.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F4AC05314E7374200A91334 /* DazRing.png */; };
@@ -45,6 +44,7 @@
 		3FBCC57614EAC1ED007A5BFF /* DazFireworksController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC57514EAC1ED007A5BFF /* DazFireworksController.m */; };
 		3FBCC57A14EAF3E8007A5BFF /* DazStarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCC57814EAF3E8007A5BFF /* DazStarIcon@2x.png */; };
 		3FBCC57B14EAF3E8007A5BFF /* DazStarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCC57914EAF3E8007A5BFF /* DazStarIcon.png */; };
+		3FCB552014EBE07E000164B1 /* readme.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 3FCB551F14EBE07E000164B1 /* readme.markdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,7 +81,6 @@
 		3F4AC03A14E7082F00A91334 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		3F4AC03B14E7082F00A91334 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		3F4AC03C14E7082F00A91334 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
-		3F4AC04C14E70C7200A91334 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		3F4AC04F14E7259400A91334 /* DazTouchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DazTouchController.h; sourceTree = "<group>"; };
 		3F4AC05014E7259400A91334 /* DazTouchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DazTouchController.m; sourceTree = "<group>"; };
 		3F4AC05214E7374200A91334 /* DazTriangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazTriangle.png; sourceTree = "<group>"; };
@@ -95,6 +94,7 @@
 		3FBCC57514EAC1ED007A5BFF /* DazFireworksController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DazFireworksController.m; sourceTree = "<group>"; };
 		3FBCC57814EAF3E8007A5BFF /* DazStarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DazStarIcon@2x.png"; sourceTree = "<group>"; };
 		3FBCC57914EAF3E8007A5BFF /* DazStarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazStarIcon.png; sourceTree = "<group>"; };
+		3FCB551F14EBE07E000164B1 /* readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,7 @@
 		3F0FBAC214E41839005ECFA1 = {
 			isa = PBXGroup;
 			children = (
-				3F4AC04C14E70C7200A91334 /* readme.txt */,
+				3FCB551F14EBE07E000164B1 /* readme.markdown */,
 				3F0FBAD714E41839005ECFA1 /* Dazzle */,
 				3F0FBAD014E41839005ECFA1 /* Frameworks */,
 				3F0FBACE14E41839005ECFA1 /* Products */,
@@ -310,11 +310,11 @@
 				3F4AC04114E7082F00A91334 /* Icon.png in Resources */,
 				3F4AC04214E7082F00A91334 /* Icon@2x.png in Resources */,
 				3F4AC04314E7082F00A91334 /* iTunesArtwork.png in Resources */,
-				3F4AC04D14E70C7200A91334 /* readme.txt in Resources */,
 				3F4AC05414E7374200A91334 /* DazTriangle.png in Resources */,
 				3F4AC05514E7374200A91334 /* DazRing.png in Resources */,
 				3FBCC57A14EAF3E8007A5BFF /* DazStarIcon@2x.png in Resources */,
 				3FBCC57B14EAF3E8007A5BFF /* DazStarIcon.png in Resources */,
+				3FCB552014EBE07E000164B1 /* readme.markdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

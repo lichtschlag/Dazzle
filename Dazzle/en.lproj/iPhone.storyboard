@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
+        <!--Daz View Controller - First-->
         <scene sceneID="11">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
                 <viewController title="First" id="2" customClass="DazViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="raF-MG-WtN">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
@@ -38,12 +37,13 @@
                         <outlet property="likeButton" destination="tBm-RZ-8FS" id="cIZ-69-InB"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="644" y="430"/>
         </scene>
+        <!--Daz Fire Controller - Fire-->
         <scene sceneID="4D6-Jl-ibY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BG1-bm-UMU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="DhX-S5-ixy" customClass="DazFireController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9O3-QX-UdP">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
@@ -65,12 +65,13 @@
                     <tabBarItem key="tabBarItem" title="Fire" image="DazFlameIcon" id="UIo-aQ-YkY"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BG1-bm-UMU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1006" y="430"/>
         </scene>
+        <!--Daz Info Controller - Second-->
         <scene sceneID="13">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
                 <viewController title="Second" id="3" customClass="DazInfoController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="17">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
@@ -108,18 +109,19 @@ I adapted the fire source code from the corresponding example for Mac OS provide
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="0.76428489963503654" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="DazFlakeIcon" id="6"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="644" y="-149"/>
         </scene>
+        <!--Daz Touch Controller - Touch-->
         <scene sceneID="gsc-B0-dNf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NLf-NZ-yvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="an2-2D-Dcy" customClass="DazTouchController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gyr-3m-DyK">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
@@ -140,26 +142,28 @@ I adapted the fire source code from the corresponding example for Mac OS provide
                     <tabBarItem key="tabBarItem" title="Touch" image="first" id="baS-VP-5MK"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NLf-NZ-yvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1006" y="-149"/>
         </scene>
+        <!--Daz Fireworks Controller - Fireworks-->
         <scene sceneID="VvL-JH-6oe">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e7S-il-F5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="YWZ-GQ-Hbv" customClass="DazFireworksController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="v5m-Bc-LW4">
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="v5m-Bc-LW4">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Fireworks" image="DazStarIcon" id="JsW-ax-Cou"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7S-il-F5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1363" y="-149"/>
         </scene>
+        <!--Tab Bar Controller-->
         <scene sceneID="15">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
                 <tabBarController id="4" sceneMemberID="viewController">
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -176,6 +180,7 @@ I adapted the fire source code from the corresponding example for Mac OS provide
                         <segue destination="YWZ-GQ-Hbv" kind="relationship" relationship="viewControllers" id="weK-m7-Wbi"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="116" y="132"/>
         </scene>

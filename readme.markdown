@@ -27,3 +27,7 @@ with the CAEmitterCell and CAEmitterLayer classes:
 Performance-wise, setting the flame height to maximum will really stress the 
 iPhone4's graphics to its max, resulting at about ~30 fps. Likewise a constant 
 triggering of new touches in the last tab will average at about 22 fps.
+
+
+Update: In iOS6 the behaviour of the birthrate property seems to have changed, a 
+fireworks explosion is triggered at t= 0s.

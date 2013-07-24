@@ -5,7 +5,7 @@
 	<key>ApplicationVersion</key>
 	<array>
 		<string>com.omnigroup.OmniGrafflePro</string>
-		<string>138.33.0.157554</string>
+		<string>139.18.0.187838</string>
 	</array>
 	<key>CreationDate</key>
 	<string>2012-02-09 16:23:52 +0000</string>
@@ -26,7 +26,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2012-02-14 19:49:10 +0000</string>
+	<string>2013-07-24 19:37:59 +0000</string>
 	<key>Modifier</key>
 	<string>Leonhard Lichtschlag</string>
 	<key>NotesVisible</key>
@@ -54,8 +54,8 @@
 		</array>
 		<key>NSPaperSize</key>
 		<array>
-			<string>coded</string>
-			<string>BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU1ZhbHVlAISECE5TT2JqZWN0AIWEASqEhAx7X05TU2l6ZT1mZn2WgVMCgUoDhg==</string>
+			<string>size</string>
+			<string>{595, 842}</string>
 		</array>
 		<key>NSPrintReverseOrientation</key>
 		<array>
@@ -104,6 +104,8 @@
 					</dict>
 				</dict>
 			</dict>
+			<key>BaseZoom</key>
+			<integer>0</integer>
 			<key>CanvasOrigin</key>
 			<string>{0, 0}</string>
 			<key>ColumnAlign</key>
@@ -265,6 +267,8 @@
 					</dict>
 				</dict>
 			</dict>
+			<key>BaseZoom</key>
+			<integer>0</integer>
 			<key>CanvasOrigin</key>
 			<string>{0, 0}</string>
 			<key>ColumnAlign</key>
@@ -327,8 +331,8 @@
 						<key>Pad</key>
 						<integer>0</integer>
 						<key>Text</key>
-						<string>{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf320
-{\fonttbl\f0\fnil\fcharset128 HiraKakuProN-W3;\f1\fswiss\fcharset0 Helvetica;}
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset128 HiraKakuProN-W3;\f1\fswiss\fcharset0 Helvetica;}
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
@@ -447,6 +451,8 @@
 					</dict>
 				</dict>
 			</dict>
+			<key>BaseZoom</key>
+			<integer>0</integer>
 			<key>CanvasOrigin</key>
 			<string>{0, 0}</string>
 			<key>ColumnAlign</key>
@@ -509,8 +515,8 @@
 						<key>Pad</key>
 						<integer>0</integer>
 						<key>Text</key>
-						<string>{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf320
-{\fonttbl\f0\fnil\fcharset128 HiraKakuProN-W3;\f1\fswiss\fcharset0 Helvetica;}
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset128 HiraKakuProN-W3;\f1\fswiss\fcharset0 Helvetica;}
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
@@ -629,6 +635,8 @@
 					</dict>
 				</dict>
 			</dict>
+			<key>BaseZoom</key>
+			<integer>0</integer>
 			<key>CanvasOrigin</key>
 			<string>{0, 0}</string>
 			<key>ColumnAlign</key>
@@ -661,8 +669,8 @@
 											<integer>57</integer>
 											<key>Points</key>
 											<array>
-												<string>{115.22076, 153.4705}</string>
-												<string>{122.15921, 193.47462}</string>
+												<string>{115.22076, 153.47049999999999}</string>
+												<string>{122.15921, 193.47461999999999}</string>
 											</array>
 											<key>Style</key>
 											<dict>
@@ -683,6 +691,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -697,8 +707,8 @@
 											<integer>58</integer>
 											<key>Points</key>
 											<array>
-												<string>{84.045395, 207.46779}</string>
-												<string>{122.15921, 193.47462}</string>
+												<string>{84.045394999999999, 207.46779000000001}</string>
+												<string>{122.15921, 193.47461999999999}</string>
 											</array>
 											<key>Style</key>
 											<dict>
@@ -719,6 +729,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -733,8 +745,8 @@
 											<integer>59</integer>
 											<key>Points</key>
 											<array>
-												<string>{81.632767, 170.69029}</string>
-												<string>{257.63278, 271.69034}</string>
+												<string>{81.632767000000001, 170.69029}</string>
+												<string>{257.63278000000003, 271.69033999999999}</string>
 											</array>
 											<key>Rotation</key>
 											<real>120</real>
@@ -757,6 +769,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -784,8 +798,8 @@
 											<integer>61</integer>
 											<key>Points</key>
 											<array>
-												<string>{255.4859, 234.45261}</string>
-												<string>{217.37206, 248.44577}</string>
+												<string>{255.48589999999999, 234.45260999999999}</string>
+												<string>{217.37206, 248.44577000000001}</string>
 											</array>
 											<key>Style</key>
 											<dict>
@@ -806,6 +820,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -820,8 +836,8 @@
 											<integer>62</integer>
 											<key>Points</key>
 											<array>
-												<string>{224.3105, 288.44989}</string>
-												<string>{217.37206, 248.44577}</string>
+												<string>{224.31049999999999, 288.44988999999998}</string>
+												<string>{217.37206, 248.44577000000001}</string>
 											</array>
 											<key>Style</key>
 											<dict>
@@ -842,6 +858,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -856,8 +874,8 @@
 											<integer>63</integer>
 											<key>Points</key>
 											<array>
-												<string>{257.36713, 272.15063}</string>
-												<string>{81.898499, 170.23007}</string>
+												<string>{257.36712999999997, 272.15062999999998}</string>
+												<string>{81.898499000000001, 170.23007000000001}</string>
 											</array>
 											<key>Rotation</key>
 											<real>120</real>
@@ -880,6 +898,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -916,8 +936,8 @@
 											<integer>66</integer>
 											<key>Points</key>
 											<array>
-												<string>{84.045502, 234.45264}</string>
-												<string>{122.1593, 248.4458}</string>
+												<string>{84.045501999999999, 234.45264}</string>
+												<string>{122.1593, 248.44579999999999}</string>
 											</array>
 											<key>Style</key>
 											<dict>
@@ -938,6 +958,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -952,8 +974,8 @@
 											<integer>67</integer>
 											<key>Points</key>
 											<array>
-												<string>{115.22084, 288.44992}</string>
-												<string>{122.15932, 248.4458}</string>
+												<string>{115.22084, 288.44992000000002}</string>
+												<string>{122.15931999999999, 248.44579999999999}</string>
 											</array>
 											<key>Style</key>
 											<dict>
@@ -974,6 +996,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -988,8 +1012,8 @@
 											<integer>68</integer>
 											<key>Points</key>
 											<array>
-												<string>{82.164291, 272.15057}</string>
-												<string>{257.63287, 170.23012}</string>
+												<string>{82.164291000000006, 272.15057000000002}</string>
+												<string>{257.63287000000003, 170.23012}</string>
 											</array>
 											<key>Rotation</key>
 											<real>120</real>
@@ -1012,6 +1036,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -1039,7 +1065,7 @@
 											<integer>70</integer>
 											<key>Points</key>
 											<array>
-												<string>{224.31059, 153.47055}</string>
+												<string>{224.31058999999999, 153.47055}</string>
 												<string>{217.37212, 193.47466}</string>
 											</array>
 											<key>Style</key>
@@ -1061,6 +1087,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -1075,7 +1103,7 @@
 											<integer>71</integer>
 											<key>Points</key>
 											<array>
-												<string>{255.48595, 207.46783}</string>
+												<string>{255.48595, 207.46782999999999}</string>
 												<string>{217.37212, 193.47466}</string>
 											</array>
 											<key>Style</key>
@@ -1097,6 +1125,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -1111,8 +1141,8 @@
 											<integer>72</integer>
 											<key>Points</key>
 											<array>
-												<string>{257.89862, 170.69035}</string>
-												<string>{81.898575, 271.69034}</string>
+												<string>{257.89861999999999, 170.69035}</string>
+												<string>{81.898574999999994, 271.69033999999999}</string>
 											</array>
 											<key>Rotation</key>
 											<real>120</real>
@@ -1135,6 +1165,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -1171,8 +1203,8 @@
 											<integer>75</integer>
 											<key>Points</key>
 											<array>
-												<string>{138.59038, 301.94232}</string>
-												<string>{169.76572, 275.9314}</string>
+												<string>{138.59038000000001, 301.94232}</string>
+												<string>{169.76571999999999, 275.9314}</string>
 											</array>
 											<key>Style</key>
 											<dict>
@@ -1193,6 +1225,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -1207,8 +1241,8 @@
 											<integer>76</integer>
 											<key>Points</key>
 											<array>
-												<string>{200.94106, 301.94232}</string>
-												<string>{169.76572, 275.9314}</string>
+												<string>{200.94105999999999, 301.94232}</string>
+												<string>{169.76571999999999, 275.9314}</string>
 											</array>
 											<key>Style</key>
 											<dict>
@@ -1229,6 +1263,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -1243,8 +1279,8 @@
 											<integer>77</integer>
 											<key>Points</key>
 											<array>
-												<string>{170.29715, 322.42047}</string>
-												<string>{169.76572, 119.5}</string>
+												<string>{170.29714999999999, 322.42047000000002}</string>
+												<string>{169.76571999999999, 119.5}</string>
 											</array>
 											<key>Rotation</key>
 											<real>120</real>
@@ -1267,6 +1303,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -1292,8 +1330,8 @@
 											<integer>79</integer>
 											<key>Points</key>
 											<array>
-												<string>{138.59038, 139.97815}</string>
-												<string>{169.76572, 165.98907}</string>
+												<string>{138.59038000000001, 139.97815}</string>
+												<string>{169.76571999999999, 165.98907}</string>
 											</array>
 											<key>Style</key>
 											<dict>
@@ -1314,6 +1352,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -1328,8 +1368,8 @@
 											<integer>80</integer>
 											<key>Points</key>
 											<array>
-												<string>{200.94106, 139.97815}</string>
-												<string>{169.76572, 165.98907}</string>
+												<string>{200.94105999999999, 139.97815}</string>
+												<string>{169.76571999999999, 165.98907}</string>
 											</array>
 											<key>Style</key>
 											<dict>
@@ -1350,6 +1390,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -1364,8 +1406,8 @@
 											<integer>81</integer>
 											<key>Points</key>
 											<array>
-												<string>{170.29715, 119.5}</string>
-												<string>{169.76572, 322.42047}</string>
+												<string>{170.29714999999999, 119.5}</string>
+												<string>{169.76571999999999, 322.42047000000002}</string>
 											</array>
 											<key>Rotation</key>
 											<real>120</real>
@@ -1388,6 +1430,8 @@
 													<string>0</string>
 													<key>Join</key>
 													<integer>0</integer>
+													<key>Legacy</key>
+													<true/>
 													<key>TailArrow</key>
 													<string>0</string>
 													<key>Width</key>
@@ -1516,6 +1560,8 @@
 					</dict>
 				</dict>
 			</dict>
+			<key>BaseZoom</key>
+			<integer>0</integer>
 			<key>CanvasOrigin</key>
 			<string>{0, 0}</string>
 			<key>ColumnAlign</key>
@@ -1528,7 +1574,7 @@
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{73, 218}, {99.000015, 99.000015}}</string>
+					<string>{{73, 218}, {99.000015000000005, 99.000015000000005}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -1551,7 +1597,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{73.439636, 74.560303}, {94.12072, 103.00004}}</string>
+					<string>{{73.439635999999993, 74.560303000000005}, {94.120720000000006, 103.00004}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -1671,11 +1717,11 @@
 	<key>WindowInfo</key>
 	<dict>
 		<key>CurrentSheet</key>
-		<integer>0</integer>
+		<integer>2</integer>
 		<key>ExpandedCanvases</key>
 		<array/>
 		<key>Frame</key>
-		<string>{{352, 0}, {693, 878}}</string>
+		<string>{{572, 5}, {693, 878}}</string>
 		<key>ListView</key>
 		<true/>
 		<key>OutlineWidth</key>
@@ -1689,7 +1735,7 @@
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{0, 0}, {544, 708}}</string>
+		<string>{{0, 0}, {544, 724}}</string>
 		<key>Zoom</key>
 		<real>1</real>
 		<key>ZoomValues</key>
@@ -1721,7 +1767,5 @@
 			</array>
 		</array>
 	</dict>
-	<key>saveQuickLookFiles</key>
-	<string>YES</string>
 </dict>
 </plist>

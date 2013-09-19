@@ -32,3 +32,6 @@ triggering of new touches in the frouth tab will average at about 22 fps.
 Update: In iOS6 the behaviour of the birthrate property seems to have changed, a 
 fireworks explosion is triggered at t= 0s. This is no longer the case in iOS7.
 
+Update: In iOS7 the behaviour of the birthrate property seems to have changed, it 
+now acts as if the objects would have been spawned in the past... (rdar:14413481)
+
